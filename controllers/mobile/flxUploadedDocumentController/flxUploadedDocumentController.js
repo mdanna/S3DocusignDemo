@@ -16,7 +16,7 @@ define({
 
 			new kony.mvc.Navigation('frmPdf').navigate({
 			  envelopeInfo: envelopeInfo, 
-			  documentUrl: me.view.lblS3Url.text
+			  documentUrl: context.widgetInfo.data[context.rowIndex].S3Url
 			});
 	  };
 	}	  
